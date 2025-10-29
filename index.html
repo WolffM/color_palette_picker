@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ColorThief.js for auto color extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.4.0/color-thief.min.js"></script>
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <input type="file" id="imageInput" accept=".jpg,.jpeg,.png,.webp" style="display: none;">
+        <button id="uploadBtn" class="btn btn-primary">📁 Upload Image</button>
+        <div class="btn-group hidden">
+            <button id="prefillBtn" class="btn btn-secondary" disabled>✨ Prefill</button>
+            <button id="prefillCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill (Ctrl+S)">📐</button>
+        </div>
+        <div class="btn-group hidden">
+            <button id="prefillAdvancedBtn" class="btn btn-secondary" disabled>🎨 Prefill (5+16)</button>
+            <button id="prefillAdvancedCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill 5+16 (Ctrl+D)">📐</button>
+        </div>
+        <button id="exportBtn" class="btn btn-secondary hidden" disabled title="Copy Palette (Ctrl+C)">📋 Copy Palette</button>
+        <button id="exportImageBtn" class="btn btn-secondary hidden" disabled title="Export Palette Image (Ctrl+E)">🖼️ Export Palette</button>
+        <button id="undoBtn" class="btn btn-secondary hidden" disabled title="Undo (Ctrl+Z)">↶ Undo</button>
+        <button id="clearBtn" class="btn btn-danger hidden" disabled>🗑️ Clear All</button>
+        <div class="zoom-info">
+            <span id="zoomLevel">100%</span>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Image Pane (Left 80%) -->
+        <div class="image-pane">
+            <canvas id="canvas"></canvas>
+            <div class="upload-overlay" id="uploadOverlay">
+                <div class="instructions">
+                    <p>📷 Upload an image to get started</p>
+                    <p class="small">Supports: JPG, PNG, WEBP</p>
+                    <p class="small hint">Click anywhere to upload</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Palette (Right 20%) -->
+        <div class="sidebar">
+            <h3>Color Palette</h3>
+            <div class="color-count">
+                <span id="colorCount">0</span> / 21 colors
+            </div>
+            <div class="palette-grid" id="paletteGrid">
+                <!-- Color blocks will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
