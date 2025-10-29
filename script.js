@@ -635,11 +635,9 @@ function prefillPaletteFromImage(image) {
         saveState();
         
         const colorThief = new ColorThief();
-        // Request extra colors to ensure we get at least MAX_COLORS
-        const palette = colorThief.getPalette(image, MAX_COLORS + 5);
+        const palette = colorThief.getPalette(image, 20);
 
-        // Take only the first MAX_COLORS
-        colors = palette.slice(0, MAX_COLORS).map(rgb => rgbToHex(rgb[0], rgb[1], rgb[2]));
+        colors = palette.map(rgb => rgbToHex(rgb[0], rgb[1], rgb[2]));
         renderPalette();
     } catch (error) {
         console.error('ColorThief error:', error);
