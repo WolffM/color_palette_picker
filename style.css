@@ -401,3 +401,12 @@ body {
         opacity: 0;
     }
 }
+
+/* Inline icons from the @wolffm/themes registry (index.html carries the SVG
+   literally — this page has no bundler to import through). The svg elements
+   already carry width/height="1em"; this is only the baseline nudge that
+   @wolffm/themes/icons.css would otherwise provide. */
+.hdk-icon {
+  vertical-align: -0.14em;
+  flex: 0 0 auto;
+}

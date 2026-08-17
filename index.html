@@ -12,19 +12,19 @@
     <!-- Toolbar -->
     <div class="toolbar">
         <input type="file" id="imageInput" accept=".jpg,.jpeg,.png,.webp" style="display: none;">
-        <button id="uploadBtn" class="btn btn-primary">📁 Upload Image</button>
+        <button id="uploadBtn" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /></svg> Upload Image</button>
         <div class="btn-group hidden">
-            <button id="prefillBtn" class="btn btn-secondary" disabled>✨ Prefill</button>
-            <button id="prefillCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill (Ctrl+S)">📐</button>
+            <button id="prefillBtn" class="btn btn-secondary" disabled><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></svg> Prefill</button>
+            <button id="prefillCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill (Ctrl+S)"><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2v14a2 2 0 0 0 2 2h14" /><path d="M18 22V8a2 2 0 0 0-2-2H2" /></svg></button>
         </div>
         <div class="btn-group hidden">
-            <button id="prefillAdvancedBtn" class="btn btn-secondary" disabled>🎨 Prefill (5+16)</button>
-            <button id="prefillAdvancedCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill 5+16 (Ctrl+D)">📐</button>
+            <button id="prefillAdvancedBtn" class="btn btn-secondary" disabled><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" /><circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /></svg> Prefill (5+16)</button>
+            <button id="prefillAdvancedCropBtn" class="btn btn-secondary btn-sub" disabled title="Crop-Prefill 5+16 (Ctrl+D)"><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2v14a2 2 0 0 0 2 2h14" /><path d="M18 22V8a2 2 0 0 0-2-2H2" /></svg></button>
         </div>
-        <button id="exportBtn" class="btn btn-secondary hidden" disabled title="Copy Palette (Ctrl+C)">📋 Copy Palette</button>
-        <button id="exportImageBtn" class="btn btn-secondary hidden" disabled title="Export Palette Image (Ctrl+E)">🖼️ Export Palette</button>
+        <button id="exportBtn" class="btn btn-secondary hidden" disabled title="Copy Palette (Ctrl+C)"><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /></svg> Copy Palette</button>
+        <button id="exportImageBtn" class="btn btn-secondary hidden" disabled title="Export Palette Image (Ctrl+E)"><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg> Export Palette</button>
         <button id="undoBtn" class="btn btn-secondary hidden" disabled title="Undo (Ctrl+Z)">↶ Undo</button>
-        <button id="clearBtn" class="btn btn-danger hidden" disabled>🗑️ Clear All</button>
+        <button id="clearBtn" class="btn btn-danger hidden" disabled><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 11v6" /><path d="M14 11v6" /><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" /><path d="M3 6h18" /><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg> Clear All</button>
         <div class="zoom-info">
             <span id="zoomLevel">100%</span>
         </div>
@@ -37,7 +37,7 @@
             <canvas id="canvas"></canvas>
             <div class="upload-overlay" id="uploadOverlay">
                 <div class="instructions">
-                    <p>📷 Upload an image to get started</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" class="hdk-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" /><circle cx="12" cy="13" r="3" /></svg> Upload an image to get started</p>
                     <p class="small">Supports: JPG, PNG, WEBP</p>
                     <p class="small hint">Click anywhere to upload</p>
                 </div>
